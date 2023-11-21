@@ -1,0 +1,269 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".FindRoom.Filter">
+
+
+    <TextView
+        android:id="@+id/text"
+        android:text="필터"
+        android:gravity="center"
+        android:textStyle="normal"
+        android:textSize="20dp"
+        android:textColor="#000000"
+        android:layout_width="match_parent"
+        android:layout_height="27dp"
+        android:layout_marginTop="30dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        />
+    <ImageButton
+        android:id="@+id/backbutton"
+        android:layout_width="52dp"
+        android:layout_height="35dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="30dp"
+        android:src="@drawable/arrow_left"
+        android:backgroundTint="@color/white"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        />
+    <TextView
+        android:id="@+id/type"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="35dp"
+        android:text="주거 형태"
+        android:textColor="@color/black"
+        android:textSize="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/text" />
+
+    <Button
+        android:id="@+id/solo"
+        android:layout_width="95dp"
+        android:layout_height="40dp"
+        android:text="개인실"
+        android:textColor="@color/gray"
+        android:textSize="15dp"
+        app:iconTint="#090808"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.100"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/type"
+        android:background="@drawable/radius"/>
+
+    <Button
+        android:id="@+id/multiebutton"
+        android:layout_width="95dp"
+        android:layout_height="40dp"
+        android:text="다인실"
+        android:textColor="@color/gray"
+        android:textSize="15dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.500"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/type"
+        android:background="@drawable/radius"/>
+
+    <TextView
+        android:id="@+id/sex"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="35dp"
+        android:text="성별"
+        android:textColor="@color/black"
+        android:textSize="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/solo" />
+
+    <Button
+        android:id="@+id/male"
+        android:layout_width="95dp"
+        android:layout_height="40dp"
+        android:text="남성전용"
+        android:textColor="@color/gray"
+        android:textSize="15dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.100"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/sex"
+        android:background="@drawable/radius"/>
+
+    <Button
+        android:id="@+id/female"
+        android:layout_width="95dp"
+        android:layout_height="40dp"
+        android:text="여성전용"
+        android:textColor="@color/gray"
+        android:textSize="15dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.500"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/sex"
+        android:background="@drawable/radius"/>
+    <TextView
+        android:id="@+id/building"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="35dp"
+        android:text="건물 유형"
+        android:textColor="@color/black"
+        android:textSize="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/female" />
+
+    <Button
+        android:id="@+id/singlehouse"
+        android:layout_width="95dp"
+        android:layout_height="40dp"
+        android:text="주택"
+        android:textColor="@color/gray"
+        android:textSize="15dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.100"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/building"
+        android:background="@drawable/radius"/>
+
+    <Button
+        android:id="@+id/apt"
+        android:layout_width="95dp"
+        android:layout_height="40dp"
+        android:text="아파트"
+        android:textColor="@color/gray"
+        android:textSize="15dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.500"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/building"
+        android:background="@drawable/radius"/>
+
+    <Button
+        android:id="@+id/office"
+        android:layout_width="95dp"
+        android:layout_height="40dp"
+        android:text="오프스텔"
+        android:textColor="@color/gray"
+        android:textSize="15dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.900"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/building"
+        android:background="@drawable/radius"/>
+
+    <TextView
+        android:id="@+id/structure"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="37dp"
+        android:text="건물 구조"
+        android:textColor="@color/black"
+        android:textSize="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/office" />
+
+    <Button
+        android:id="@+id/oneroom"
+        android:layout_width="95dp"
+        android:layout_height="40dp"
+        android:text="원룸"
+        android:textColor="@color/gray"
+        android:textSize="15dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.100"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/structure"
+        android:background="@drawable/radius"/>
+
+    <Button
+        android:id="@+id/tworoom"
+        android:layout_width="95dp"
+        android:layout_height="40dp"
+        android:text="투룸"
+        android:textColor="@color/gray"
+        android:textSize="15dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.500"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/structure"
+        android:background="@drawable/radius"/>
+
+    <Button
+        android:id="@+id/threeroom"
+        android:layout_width="95dp"
+        android:layout_height="40dp"
+        android:text="쓰리룸이상"
+        android:textColor="@color/gray"
+        android:textSize="15dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.900"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/structure"
+        android:background="@drawable/radius"/>
+
+    <TextView
+        android:id="@+id/smoking"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="37dp"
+        android:text="흡연 여부"
+        android:textColor="@color/black"
+        android:textSize="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/threeroom" />
+
+    <Button
+        android:id="@+id/irrelevant"
+        android:layout_width="95dp"
+        android:layout_height="40dp"
+        android:text="무관"
+        android:textSize="15dp"
+        android:textColor="@color/gray"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.100"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/smoking"
+        android:background="@drawable/radius"/>
+
+    <Button
+        android:id="@+id/smoking1"
+        android:layout_width="95dp"
+        android:layout_height="40dp"
+        android:text="흡연"
+        android:textColor="@color/gray"
+        android:textSize="15dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.500"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/smoking"
+        android:background="@drawable/radius"/>
+
+    <Button
+        android:id="@+id/nonsmoking"
+        android:layout_width="95dp"
+        android:layout_height="40dp"
+        android:text="비흡연"
+        android:textColor="@color/gray"
+        android:textSize="15dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.900"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/smoking"
+        android:background="@drawable/radius"/>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

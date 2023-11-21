@@ -1,0 +1,29 @@
+<resources>
+    <string name="app_name">집동이</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="title_activity_filter">filter</string>
+    <!-- Strings used for fragments for navigation -->
+    <string name="first_fragment_label">First Fragment</string>
+    <string name="second_fragment_label">Second Fragment</string>
+    <string name="next">Next</string>
+    <string name="previous">Previous</string>
+
+    <string name="hello_first_fragment">Hello first fragment</string>
+    <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
+    <string name="title_activity_select_location">SelectLocation</string>
+
+    <!-- 알림 채널 -->
+    <string name="notification_channel_name">Chat Notifications</string>
+    <string name="notification_channel_description">Notification channel for chat messages</string>
+    <string name="notification_content">chat_notification_channel</string>
+    <string name="channel_name">Chatting Channel</string>
+    <string name="channel_description">Notification channel for chat messagese</string>
+
+    <!-- 알림 내용 -->
+    <string name="default_notification_channel_id">default_channel_id</string>
+    <string name="notification_title">New Message</string>
+    <string name="notification_text">New Message</string>
+    <string name="title_activity_change_room_insert1">ChangeRoomInsert_1</string>
+
+</resources>

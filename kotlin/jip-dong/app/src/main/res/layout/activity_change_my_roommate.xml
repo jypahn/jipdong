@@ -1,0 +1,227 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Mypage.ChangeMyRoommate">
+
+    <TextView
+        android:id="@+id/text"
+        android:layout_width="match_parent"
+        android:layout_height="27dp"
+        android:layout_marginTop="30dp"
+        android:gravity="center"
+        android:text="내 글 수정하기"
+        android:textColor="#000000"
+        android:textSize="20dp"
+        android:textStyle="normal"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageButton
+        android:id="@+id/backbutton"
+        android:layout_width="52dp"
+        android:layout_height="35dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="30dp"
+        android:backgroundTint="@color/white"
+        android:src="@drawable/arrow_left"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <TextView
+        android:id="@+id/locate"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="20dp"
+        android:text="희망지역"
+        android:textColor="#000000"
+        android:textSize="20dp"
+        android:textStyle="normal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/text" />
+
+    <Button
+        android:id="@+id/locatebutton"
+        android:layout_width="230dp"
+        android:layout_height="35dp"
+        android:text="희망지역 선택"
+        android:layout_marginTop="30dp"
+        android:layout_marginRight="20dp"
+        android:textColor="@color/gray"
+        android:textSize="15dp"
+        app:iconTint="#090808"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/text"
+        android:background="@drawable/radius"/>
+
+
+    <TextView
+        android:id="@+id/period"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="20dp"
+        android:text="희망기간"
+        android:textColor="#000000"
+        android:textSize="20dp"
+        android:textStyle="normal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/locate" />
+
+
+    <Button
+        android:id="@+id/startdatebutton"
+        android:layout_width="110dp"
+        android:layout_height="35dp"
+        android:text="시작일 선택"
+        android:layout_marginTop="30dp"
+        android:layout_marginRight="140dp"
+        android:textColor="@color/gray"
+        android:textSize="15dp"
+        app:iconTint="#090808"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/locate"
+        android:background="@drawable/radius"/>
+
+    <Button
+        android:id="@+id/finishdatebutton"
+        android:layout_width="110dp"
+        android:layout_height="35dp"
+        android:text="종료일 선택"
+        android:layout_marginTop="30dp"
+        android:layout_marginRight="20dp"
+        android:textColor="@color/gray"
+        android:textSize="15dp"
+        app:iconTint="#090808"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/locate"
+        android:background="@drawable/radius"/>
+
+
+    <TextView
+        android:id="@+id/price"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="20dp"
+        android:text="희망금액"
+        android:textColor="#000000"
+        android:textSize="20dp"
+        android:textStyle="normal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/period" />
+
+
+    <EditText
+        android:id="@+id/pricestarttext"
+        android:layout_width="50dp"
+        android:layout_height="40dp"
+        android:hint="가격"
+        android:layout_marginTop="30dp"
+        android:layout_marginRight="180dp"
+        android:textColor="@color/gray"
+        android:gravity="center"
+
+        android:textSize="15dp"
+        app:iconTint="#090808"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/period" />
+
+    <TextView
+        android:id="@+id/price1"
+        android:layout_width="30dp"
+        android:layout_height="40dp"
+        android:text="만원"
+        android:layout_marginTop="30dp"
+        android:layout_marginRight="160dp"
+        android:textColor="@color/gray"
+        android:gravity="center"
+        android:textSize="15dp"
+        app:iconTint="#090808"
+        app:layout_constraintStart_toEndOf="@id/pricestarttext"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/period" />
+
+
+    <TextView
+        android:id="@+id/pricing"
+        android:layout_width="30dp"
+        android:layout_height="40dp"
+        android:text="~"
+        android:layout_marginTop="30dp"
+        android:layout_marginRight="110dp"
+        android:textColor="@color/gray"
+        android:gravity="center"
+        android:textSize="15dp"
+        app:iconTint="#090808"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/period" />
+
+    <EditText
+        android:id="@+id/priceendtext"
+        android:layout_width="50dp"
+        android:layout_height="40dp"
+        android:hint="가격"
+        android:layout_marginTop="30dp"
+        android:layout_marginRight="50dp"
+        android:textColor="@color/gray"
+        android:gravity="center"
+        android:textSize="15dp"
+        app:iconTint="#090808"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/period" />
+
+
+    <TextView
+        android:id="@+id/price2"
+        android:layout_width="30dp"
+        android:layout_height="40dp"
+        android:text="만원"
+        android:layout_marginTop="30dp"
+        android:layout_marginRight="30dp"
+        android:textColor="@color/gray"
+        android:gravity="center"
+        android:textSize="15dp"
+        app:iconTint="#090808"
+        app:layout_constraintStart_toEndOf="@id/priceendtext"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/period" />
+
+    <EditText
+        android:id="@+id/detail"
+        android:hint="자신을 소개하는 글을 적어 룸메이트를 찾아보세요."
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="40dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        app:layout_constraintTop_toBottomOf="@id/price"
+        android:background="@drawable/memo_border"
+        />
+
+
+    <Button
+        android:id="@+id/changebutton"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="40dp"
+        android:layout_marginEnd="40dp"
+        android:layout_marginBottom="20dp"
+        android:backgroundTint="#909ff8"
+        android:text="수정하기"
+        android:textColor="@color/black"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:background="@drawable/butoon_round"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

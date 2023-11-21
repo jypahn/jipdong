@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <ScrollView
+        android:id="@+id/scroll"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toTopOf="@+id/homebutton"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0"
+        tools:layout_editor_absoluteX="0dp">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/a"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+
+            <TextView
+                android:id="@+id/textView5"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="30dp"
+                android:gravity="left"
+                android:paddingLeft="25dp"
+                android:text="집동이"
+                android:textColor="#909FF8"
+                android:textSize="25dp"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+
+            <androidx.appcompat.widget.AppCompatImageButton
+                android:id="@+id/roommatebutton"
+                android:layout_width="280dp"
+                android:layout_height="220dp"
+                android:layout_marginTop="100dp"
+                android:background="@drawable/butoon_round"
+                android:padding="0sp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/fredn11"
+                android:textSize="20dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+
+            <androidx.appcompat.widget.AppCompatImageButton
+                android:id="@+id/roombutton"
+                android:layout_width="280dp"
+                android:layout_height="220dp"
+                android:layout_marginTop="22dp"
+                android:background="@drawable/butoon_round"
+                android:padding="0sp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/room9"
+                android:textSize="20dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/roommatebutton" />
+
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/aibutton"
+                android:layout_width="130dp"
+                android:layout_height="100dp"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/butoon_round"
+                android:hint="AI 추천"
+                android:textSize="20dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.217"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/roombutton" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/addbutton"
+                android:layout_width="130dp"
+                android:layout_height="100dp"
+                android:layout_marginTop="22dp"
+                android:background="@drawable/butoon_round"
+                android:hint="매물 등록"
+                android:textSize="20dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.789"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/roombutton" />
+
+            <ImageView
+                android:id="@+id/emptyImage"
+                android:layout_width="0dp"
+                android:layout_height="50dp"
+                android:layout_marginTop="20dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintDimensionRatio="w,10:17"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/addbutton"
+                tools:background="@color/white" />
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+    </ScrollView>
+
+    <ImageButton
+        android:id="@+id/homebutton"
+        android:layout_width="45dp"
+        android:layout_height="45dp"
+        android:layout_marginLeft="45dp"
+        android:layout_marginBottom="20dp"
+        android:backgroundTint="@color/white"
+        android:src="@drawable/home_line2"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        />
+
+    <ImageButton
+        android:id="@+id/heartbutton"
+        android:layout_width="45dp"
+        android:layout_height="45dp"
+        android:layout_marginBottom="20dp"
+        android:backgroundTint="@color/white"
+        android:src="@drawable/heart_line2"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginLeft="45dp"
+        app:layout_constraintStart_toEndOf="@+id/homebutton" />
+
+    <ImageButton
+        android:id="@+id/chatbutton"
+        android:layout_width="45dp"
+        android:layout_height="45dp"
+        android:layout_marginBottom="20dp"
+        android:backgroundTint="@color/white"
+        android:src="@drawable/talk_line3"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginRight="45dp"
+        app:layout_constraintEnd_toStartOf="@id/profilebutton" />
+
+    <ImageButton
+        android:id="@+id/profilebutton"
+        android:layout_width="45dp"
+        android:layout_height="45dp"
+        android:layout_marginBottom="20dp"
+        android:layout_marginRight="45dp"
+        android:backgroundTint="@color/white"
+        android:src="@drawable/avatar_line2"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        />
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
